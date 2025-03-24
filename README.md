@@ -34,17 +34,9 @@ A modern, responsive weather application that delivers real-time weather informa
 2. Replace the API key in `scriptWeather.js` with your own OpenWeatherMap API key
 3. Open `index.html` in your browser
 
-## 📱 Preview
-
-[Add a screenshot or GIF of your application here]
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
