@@ -1,1 +1,125 @@
-<-- code will be updated soon-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesWeather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <h1>Weather App</h1>
+            <div class="search-controls">
+                <div class="search-bar">
+                    <input type="search" id="city" placeholder="Enter city name">
+                    <button id="search"><i class="fa fa-search"></i>&nbspSearch</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cline x1='12' y1='1' x2='12' y2='3'/%3E%3Cline x1='12' y1='21' x2='12' y2='23'/%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'/%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'/%3E%3Cline x1='1' y1='12' x2='3' y2='12'/%3E%3Cline x1='21' y1='12' x2='23' y2='12'/%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'/%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'/%3E%3C/svg%3E" alt="Theme Toggle" class="light-icon">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E" alt="Theme Toggle" class="dark-icon">
+                </button>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="weather-container">
+                <div class="weather-info">
+                    <div class="location">
+                        <h2 id="city-name">City Name</h2>
+                        <p id="date">Current Date</p>
+                    </div>
+
+                    <div class="weather-main">
+                        <div class="temperature">
+                            <h1 id="temp">--°C</h1>
+                            <p id="feels-like">Feels like: --°C</p>
+                        </div>
+                        <div class="weather-condition">
+                            <img id="weather-icon" src="loading.png" alt="Weather Icon">
+                            <p id="condition">Weather Condition</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span class="label">Humidity</span>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Wind Speed</span>
+                            <span id="wind-speed">-- km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Pressure</span>
+                            <span id="pressure">-- hPa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-info">
+                    <h2> Forecast</h2>
+                    <div class="forecast-container">
+                        <div class="forecast-day">
+                            <h3 id="day1-date">Tomorrow</h3>
+                            <img id="day1-icon" src="loading.png" alt="Weather Icon">
+                            <div class="forecast-temp">
+                                <span id="day1-temp-max">--°C</span>
+                                <span id="day1-temp-min">--°C</span>
+                            </div>
+                            <p id="day1-condition">Weather Condition</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h3 id="day2-date">Day 2</h3>
+                            <img id="day2-icon" src="loading.png" alt="Weather Icon">
+                            <div class="forecast-temp">
+                                <span id="day2-temp-max">--°C</span>
+                                <span id="day2-temp-min">--°C</span>
+                            </div>
+                            <p id="day2-condition">Weather Condition</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h3 id="day3-date">Day 3</h3>
+                            <img id="day3-icon" src="loading.png" alt="Weather Icon">
+                            <div class="forecast-temp">
+                                <span id="day3-temp-max">--°C</span>
+                                <span id="day3-temp-min">--°C</span>
+                            </div>
+                            <p id="day3-condition">Weather Condition</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h3 id="day4-date">Day 4</h3>
+                            <img id="day4-icon" src="loading.png" alt="Weather Icon">
+                            <div class="forecast-temp">
+                                <span id="day4-temp-max">--°C</span>
+                                <span id="day4-temp-min">--°C</span>
+                            </div>
+                            <p id="day4-condition">Weather Condition</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h3 id="day5-date">Day 5</h3>
+                            <img id="day5-icon" src="loading.png" alt="Weather Icon">
+                            <div class="forecast-temp">
+                                <span id="day5-temp-max">--°C</span>
+                                <span id="day5-temp-min">--°C</span>
+                            </div>
+                            <p id="day5-condition">Weather Condition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Weather App. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+    <script src="scriptWeather.js"></script>
+</body>
+</html>
