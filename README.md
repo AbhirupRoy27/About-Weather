@@ -3,6 +3,11 @@
 A modern, responsive weather application that delivers real-time weather information with an elegant, user-friendly interface. Built with vanilla JavaScript and featuring a sophisticated glassmorphism design.
 
 - **LINK:**  https://about-weather.netlify.app/
+# Light Mode:
+<img width="1710" alt="Screenshot 2025-04-03 at 8 47 30 PM" src="https://github.com/user-attachments/assets/a7990d44-e852-4b01-91a7-554f0861bb57" />
+
+# Dark Mode:
+<img width="1710" alt="Screenshot 2025-04-03 at 8 47 47 PM" src="https://github.com/user-attachments/assets/4af8eede-618d-4746-a681-5789b1cd37e2" />
 
 
 ## ✨ Features
